@@ -2,9 +2,6 @@ package com.example;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.internal.matchers.GreaterThan;
-import org.mockito.internal.matchers.LessThan;
-
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.lessThan;
@@ -44,6 +41,6 @@ public class TestGreeter {
   public void greetShouldIncludeGreetingMessage1() {
     String someone = "Hi, My namie is Omer Kenig";
 
-    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
+    assertThat(greeter.greet(someone).length(), is(lessThan(someone.length())));
   }
 }
