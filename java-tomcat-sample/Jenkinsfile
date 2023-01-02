@@ -23,6 +23,7 @@ pipeline {
                     input message:'Approve PRODUCTION Deployment?'
                  }
                 build job: 'Deploy-Application-Staging-Prod-env' 
+            }
         }
     }
 }
