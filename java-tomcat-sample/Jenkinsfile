@@ -19,8 +19,10 @@ pipeline {
         }
            stage('Deploy in Prod Environment'){
             steps{
-                build job: 'Deploy-Application-Staging-Prod-env'
-            }
+                 timeout(time:5, unit:'DAYS'){
+                    input message:'Approve PRODUCTION Deployment?'
+                 }
+                build job: 'Deploy-Application-Staging-Prod-env' 
         }
     }
 }
