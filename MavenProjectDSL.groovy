@@ -3,6 +3,7 @@ job('First-Maven-Project-Via-DSL') {
     scm {
         git("https://github.com/omerkenig/Jenkins_Upgradev3.git", 'master')
     }
+    1111
     triggers {
         scm('* * * * *')
     }
