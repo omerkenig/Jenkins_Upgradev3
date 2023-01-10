@@ -9,13 +9,5 @@
   <p>Hello from omer to jenkins - v5 Code Pipeline...</p>
   <p>Hello from omer to jenkins - v6 Code Pipeline...</p>
 
-
-
-
-  
-
-
-
-
 </body>
 </html>
